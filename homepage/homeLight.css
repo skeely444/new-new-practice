@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff7eb3, #ff758c);
+    position: relative;
+  }
+  
+  .hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(20px);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  
+  .nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .nav-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+  #toggleMode {
+    margin-left: 99%;
+    text-align: top;
+  }
