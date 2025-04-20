@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background: linear-gradient(to right, #e231b2, #ffffff);
+    background: linear-gradient(to right, #e231b2, #fdaefa);
     position: relative;
   }
   
@@ -46,5 +46,7 @@ body {
     transform: translateX(0);
   }
  .mainText {
-  
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 150px;
  }
