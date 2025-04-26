@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Smile</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link id="styler" rel="stylesheet" href="homeLight.css">
-        <script src="https://kit.fontawesome.com/688e5095a8.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div class="hamburger" id="hamburger">
-              &#9776;
-            </div>
-            <nav class="nav-menu" id="navMenu">
-              <a href="home.html">Home</a>
-              <a href="#">Products</a>
-              <a href="#">User dashboard</a>
-              <a id="toggler" onclick="darkMode()">Dark mode?</a>
-            </nav>
-          </header>
-          <h1 class="mainText">Smile</h1>
-          <script src="homeScripts.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Smile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="styler" rel="stylesheet" href="homeLight.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Imperial+Script&family=Julee&family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/688e5095a8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="hamburger" id="hamburger" aria-label="Open navigation menu" role="button" tabindex="0">
+        &#9776;
+      </div>
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a href="#" aria-label="Learn about Smile">About smile</a>
+        <a href="#" aria-label="View our products">Products</a>
+        <a href="#" aria-label="Go to user dashboard">User dashboard</a>
+        <a id="toggler" onclick="darkMode()" role="button" tabindex="0" aria-label="Toggle dark mode">Dark mode?</a>
+      </nav>
+      </header>
+      <img id="background" src="https://i.postimg.cc/fT2x2fvJ/f0203874-800px-wm.jpg" alt="Smile background image">
+      <h1 id="mainHeader">Smile</h1>
+      <p id="mainText">Hi, welcome to The Smile Project. Our goal is to make a custom ROM using apps, wallpapers and more that are fully created by the community. <a href="#" aria-label="Start developing with us">Want to start developing?</a></p>
+      <h2 id="newsHeader">News</h2>
+      <script src="homeScripts.js"></script>
+  </body>
 </html>
