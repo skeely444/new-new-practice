@@ -7,8 +7,16 @@ hamburger.addEventListener("click", () => {
 function showMeYourPassword() {
   const toggler = document.getElementById("theEye");
   const inputField = document.getElementById("input");
-  toggler.innerHTML = '<i class="fa-solid fa-eye-slash"></i>'
+  toggler.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
   inputField.type = "text";
+  toggler.onclick = hideYourPassword;
+}
+function hideYourPassword() {
+  const toggler = document.getElementById("theEye");
+  const inputField = document.getElementById("input");
+  toggler.innerHTML = '<i class="fa-solid fa-eye"></i>';
+  inputField.type = "password";
+  toggler.onclick = showMeYourPassword;
 }
 function sendLogin() {
   const inputtedPassword = document.getElementById("input").value
